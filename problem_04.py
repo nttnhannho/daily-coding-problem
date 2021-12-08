@@ -13,26 +13,27 @@ You can modify the input array in-place.
 """
 
 
-def find_lowest_positive_number(numbers):
-    input_length = len(numbers)
+def find_smallest_positive_number(numbers):
+    length = len(numbers)
 
     if not numbers or 1 not in numbers:
         return 1
 
-    for i, value in enumerate(numbers):
-        if value <= 0 or value > input_length:
-            value = 1
-            numbers[i] = value
+    for index, num in enumerate(numbers):
+        if num <= 0 or num > length:
+            #  Transform all negative numbers, 0 and number > length into 1
+            num = 1
+            numbers[index] = num
 
-        index = value - 1
+        index = num - 1
         if numbers[index] > 0:
             numbers[index] = -1 * numbers[index]
 
-    for i, value in enumerate(numbers):
-        if value > 0:
-            return i + 1
+    for index, num in enumerate(numbers):
+        if num > 0:
+            return index + 1
 
-    return input_length + 1
+    return length + 1
 
 
 if __name__ == "__main__":
@@ -44,10 +45,10 @@ if __name__ == "__main__":
     sample6 = [1, 2, 3, 4, 5, 8]
     sample7 = [4, 2, 6]
 
-    print(find_lowest_positive_number(sample1))
-    print(find_lowest_positive_number(sample2))
-    print(find_lowest_positive_number(sample3))
-    print(find_lowest_positive_number(sample4))
-    print(find_lowest_positive_number(sample5))
-    print(find_lowest_positive_number(sample6))
-    print(find_lowest_positive_number(sample7))
+    print(find_smallest_positive_number(sample1))
+    print(find_smallest_positive_number(sample2))
+    print(find_smallest_positive_number(sample3))
+    print(find_smallest_positive_number(sample4))
+    print(find_smallest_positive_number(sample5))
+    print(find_smallest_positive_number(sample6))
+    print(find_smallest_positive_number(sample7))

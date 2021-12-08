@@ -12,15 +12,17 @@ Bonus: Can you do this in one pass?
 
 
 def is_found(lst, k):
-    for index, value in enumerate(lst):
-        temp = k - value
-        if temp in lst[index + 1:]:
+    seen = {}  # Empty dict to store seen numbers
+    for num in lst:
+        diff = k - num  # Get difference of k and current number in sample list
+        if diff in seen:
             return True
-    else:
-        return False
+        seen[num] = True  # Add number to dict
+    return False
 
 
 if __name__ == "__main__":
     sample_lst = [10, 15, 3, 7]
-    for sample_k in range(30):
-        print(f"{sample_k} : {is_found(sample_lst, sample_k)}")
+    for k in range(30):
+        if is_found(sample_lst, k):
+            print(k)
