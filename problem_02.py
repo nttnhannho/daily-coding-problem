@@ -23,20 +23,20 @@ def get_product(input_):
     return reduce(lambda x, y: x * y, input_)
 
 
-def generate(numbers):
+def solution(nums):
     result = []
-    if len(numbers) < 2:
+    if len(nums) < 2:
         return []
-    for index, num in enumerate(numbers):
+    for index, num in enumerate(nums):
         if index == 0:
-            new_num = get_product(numbers[1:])  # Get product of all elements except the 1st one.
-        elif index == len(numbers) - 1:
-            new_num = get_product(numbers[:-1])  # Get product of all elements except the last one.
+            new_num = get_product(nums[1:])  # Get product of all elements except the 1st one.
+        elif index == len(nums) - 1:
+            new_num = get_product(nums[:-1])  # Get product of all elements except the last one.
         else:  # Get product of all elements except the middle one.
             # Split the input list into 2 parts: left and right.
             # Get product of both left and right, then plus them together.
-            left = numbers[:index]
-            right = numbers[index + 1:]
+            left = nums[:index]
+            right = nums[index + 1:]
             new_left_num = get_product(left)
             new_right_num = get_product(right)
             new_num = new_left_num * new_right_num
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     sample3 = [1]
     sample4 = []
 
-    print(generate(sample1))
-    print(generate(sample2))
-    print(generate(sample3))
-    print(generate(sample4))
+    print(solution(sample1))
+    print(solution(sample2))
+    print(solution(sample3))
+    print(solution(sample4))

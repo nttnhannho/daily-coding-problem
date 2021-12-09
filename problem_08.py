@@ -25,27 +25,29 @@ class Node:
         self.right = right
 
 
-def count_tree(root):
-    count = [0]
-    count_subtree(root, count)
-    return count[0]
+def solution(root):
+    count, _ = count_subtrees(root)
+    return count
 
 
-def count_subtree(root, count):
+def count_subtrees(root):
     if not root:
-        return True
-    left = count_subtree(root.left, count)
-    right = count_subtree(root.right, count)
-    if not left or not right:
-        return False
-    if root.left and root.val != root.left.val:
-        return False
-    if root.right and root.val != root.right.val:
-        return False
-    count[0] += 1
-    return True
+        return 0, True
+
+    left_count, is_left_unival = count_subtrees(root.left)
+    right_count, is_right_unival = count_subtrees(root.right)
+    total = left_count + right_count
+
+    if is_left_unival and is_right_unival:
+        if root.left and root.val != root.left.val:
+            return total, False
+        if root.right and root.val != root.right.val:
+            return total, False
+        return total + 1, True
+
+    return total, False
 
 
 if __name__ == "__main__":
     root = Node(0, Node(1), Node(0, Node(1, Node(1), Node(1)), Node(0)))
-    print(count_tree(root))
+    print(solution(root))

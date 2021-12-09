@@ -11,18 +11,17 @@ Bonus: Can you do this in one pass?
 """
 
 
-def is_found(lst, k):
-    seen = {}  # Empty dict to store seen numbers
-    for num in lst:
-        diff = k - num  # Get difference of k and current number in sample list
-        if diff in seen:
+def solution(nums, k):
+    seen = set()  # Empty set to store seen numbers
+    for num in nums:
+        if k - num in seen:
             return True
-        seen[num] = True  # Add number to dict
+        seen.add(num)  # Add number to set
     return False
 
 
 if __name__ == "__main__":
     sample_lst = [10, 15, 3, 7]
     for k in range(30):
-        if is_found(sample_lst, k):
+        if solution(sample_lst, k):
             print(k)
