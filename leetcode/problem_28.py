@@ -23,10 +23,6 @@ Output: -1
 Example 3:
 Input: haystack = "", needle = ""
 Output: 0
-
-Constraints:
-0 <= haystack.length, needle.length <= 5 * 104
-haystack and needle consist of only lower-case English characters.
 """
 
 

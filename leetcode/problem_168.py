@@ -24,9 +24,6 @@ Output: "AB"
 Example 3:
 Input: columnNumber = 701
 Output: "ZY"
-
-Constraints:
-1 <= columnNumber <= 231 - 1
 """
 
 
