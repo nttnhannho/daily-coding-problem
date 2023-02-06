@@ -47,5 +47,9 @@ class Solution:
         return get_tree_path(root, f"{root.val}", [])
 
 
-if __name__ == "__main__":
+def main():
     pass
+
+
+if __name__ == "__main__":
+    main()

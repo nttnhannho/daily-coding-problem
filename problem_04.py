@@ -44,7 +44,7 @@ def solution02(nums):
     return i
 
 
-if __name__ == "__main__":
+def main():
     sample1 = [3, 4, -1, 1]
     sample2 = [1, 2, 0]
     sample3 = [7, 4, -3, 8, 1, 2]
@@ -77,3 +77,7 @@ if __name__ == "__main__":
     print(solution02(sample5))
     print(solution02(sample6))
     print(solution02(sample7))
+
+
+if __name__ == "__main__":
+    main()

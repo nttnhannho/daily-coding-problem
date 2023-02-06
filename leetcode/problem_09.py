@@ -41,8 +41,12 @@ class Solution:
         return int(f'-{(str(x)[1:])[::-1]}') if lower_bound <= int(f'-{(str(x)[1:])[::-1]}') <= upper_bound else 0
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.isPalindrome(121))
     print(solution.isPalindrome(-121))
     print(solution.isPalindrome(10))
+
+
+if __name__ == "__main__":
+    main()

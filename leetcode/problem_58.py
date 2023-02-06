@@ -29,8 +29,12 @@ class Solution:
         return len(temp[-1])
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.lengthOfLastWord("Hello World"))
     print(solution.lengthOfLastWord("   fly me   to   the moon  "))
     print(solution.lengthOfLastWord("luffy is still joyboy"))
+
+
+if __name__ == "__main__":
+    main()

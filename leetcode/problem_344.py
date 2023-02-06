@@ -25,7 +25,7 @@ class Solution:
                 s[i], s[s_len - 1 - i] = s[s_len - 1 - i], s[i]
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
 
     sample1 = ["h", "e", "l", "l", "o"]
@@ -35,3 +35,7 @@ if __name__ == "__main__":
     sample2 = ["H", "a", "n", "n", "a", "h"]
     solution.reverseString(sample2)
     print(sample2)
+
+
+if __name__ == "__main__":
+    main()

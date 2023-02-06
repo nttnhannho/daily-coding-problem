@@ -30,7 +30,7 @@ def cdr(func):
     return func(lambda a, b: b)
 
 
-if __name__ == "__main__":
+def main():
     a1, b1 = 1, 2
     a2, b2 = 3, 4
     a3, b3 = 10, 0
@@ -46,3 +46,7 @@ if __name__ == "__main__":
     print(cdr(cons(a1, b1)))  # Result = 2
     print(cdr(cons(a2, b2)))  # Result = 4
     print(cdr(cons(a3, b3)))  # Result = 0
+
+
+if __name__ == "__main__":
+    main()

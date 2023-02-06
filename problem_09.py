@@ -28,7 +28,11 @@ def solution(lst):
     return max(max_including_last, max_excluding_last)
 
 
-if __name__ == "__main__":
+def main():
     print(solution([2, 4, 6, 2, 5]))
     print(solution([5, 1, 1, 5]))
     print(solution([1, 5, 1, 5]))
+
+
+if __name__ == "__main__":
+    main()

@@ -31,8 +31,12 @@ class Solution:
         return haystack.find(needle)
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.strStr("hello", "ll"))
     print(solution.strStr("aaaaa", "bba"))
     print(solution.strStr("", ""))
+
+
+if __name__ == "__main__":
+    main()

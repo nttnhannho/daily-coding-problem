@@ -28,7 +28,11 @@ def solution(s):
     return cache[0]
 
 
-if __name__ == "__main__":
+def main():
     print(solution("111"))
     print(solution("011"))
     print(solution("602"))
+
+
+if __name__ == "__main__":
+    main()

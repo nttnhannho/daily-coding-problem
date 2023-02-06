@@ -30,8 +30,12 @@ class Solution:
         return temp == temp[::-1]
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.isPalindrome("A man, a plan, a canal: Panama"))
     print(solution.isPalindrome("race a car"))
     print(solution.isPalindrome(" "))
+
+
+if __name__ == "__main__":
+    main()

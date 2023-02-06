@@ -48,7 +48,7 @@ def deserialize(data):
     return helper()
 
 
-if __name__ == "__main__":
+def main():
     node = Node("root", Node("left", Node("left.left")), Node("right"))
 
     try:
@@ -68,3 +68,7 @@ if __name__ == "__main__":
         print(deserialize(serialize(node)).right.right.val == "#")
     except AttributeError:
         print("Node is not existed")
+
+
+if __name__ == "__main__":
+    main()

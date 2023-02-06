@@ -48,6 +48,10 @@ def count_subtrees(root):
     return total, False
 
 
-if __name__ == "__main__":
+def main():
     root = Node(0, Node(1), Node(0, Node(1, Node(1), Node(1)), Node(0)))
     print(solution(root))
+
+
+if __name__ == "__main__":
+    main()

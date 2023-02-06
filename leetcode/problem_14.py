@@ -30,7 +30,11 @@ class Solution:
         return ''.join(prefixes)
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.longestCommonPrefix(["flower", "flow", "flight"]))
     print(solution.longestCommonPrefix(["dog", "racecar", "car"]))
+
+
+if __name__ == "__main__":
+    main()

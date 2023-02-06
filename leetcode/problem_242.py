@@ -21,7 +21,11 @@ class Solution:
         return Counter(s) == Counter(t)
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.isAnagram("anagram", "nagaram"))
     print(solution.isAnagram("rat", "car"))
+
+
+if __name__ == "__main__":
+    main()

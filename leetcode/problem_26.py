@@ -58,7 +58,11 @@ class Solution:
         return p1
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.removeDuplicates([1, 1, 2]))
     print(solution.removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
+
+
+if __name__ == "__main__":
+    main()

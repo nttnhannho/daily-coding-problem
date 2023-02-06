@@ -20,8 +20,12 @@ def solution(nums, k):
     return False
 
 
-if __name__ == "__main__":
+def main():
     sample_lst = [10, 15, 3, 7]
     for k in range(30):
         if solution(sample_lst, k):
             print(k)
+
+
+if __name__ == "__main__":
+    main()

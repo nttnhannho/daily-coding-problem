@@ -34,7 +34,7 @@ class Log:
         return self._log[self._cur - i]
 
 
-if __name__ == "__main__":
+def main():
     log = Log(5)  # Initialize log with size = 5
 
     print("After adding 1, 2, 3")
@@ -71,3 +71,7 @@ if __name__ == "__main__":
 
     for i in range(1, 6):
         print(f"Index {i}th: {log.get_last(i)}")
+
+
+if __name__ == "__main__":
+    main()

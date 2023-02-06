@@ -57,7 +57,7 @@ class XORLinkedList:
         return node.val
 
 
-if __name__ == "__main__":
+def main():
     xor_ll = XORLinkedList()
     xor_ll.add(1)
     xor_ll.add(23)
@@ -66,3 +66,7 @@ if __name__ == "__main__":
     print(xor_ll.get(0))
     print(xor_ll.get(1))
     print(xor_ll.get(2))
+
+
+if __name__ == "__main__":
+    main()

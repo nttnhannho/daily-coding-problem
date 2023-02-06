@@ -38,9 +38,13 @@ class Solution:
         return res
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.mySqrt(4))
     print(solution.mySqrt(8))
     print(solution.mySqrt(16))
     print(solution.mySqrt(11))
+
+
+if __name__ == "__main__":
+    main()

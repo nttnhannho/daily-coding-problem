@@ -37,9 +37,13 @@ class Solution:
         return res
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.titleToNumber("A"))
     print(solution.titleToNumber("AB"))
     print(solution.titleToNumber("ZY"))
     print(solution.titleToNumber("AAA"))
+
+
+if __name__ == "__main__":
+    main()

@@ -33,7 +33,11 @@ class Solution:
         return one_before_penultimate
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.climbStairs(2))
     print(solution.climbStairs(3))
+
+
+if __name__ == "__main__":
+    main()

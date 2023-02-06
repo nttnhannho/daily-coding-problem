@@ -40,8 +40,12 @@ class Solution:
         return left
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.searchInsert([1, 3, 5, 6], 5))
     print(solution.searchInsert([1, 3, 5, 6], 2))
     print(solution.searchInsert([1, 3, 5, 6], 7))
+
+
+if __name__ == "__main__":
+    main()

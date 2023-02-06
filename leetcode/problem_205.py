@@ -46,9 +46,13 @@ class Solution:
         return True
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.isIsomorphic("egg", "add"))
     print(solution.isIsomorphic("foo", "bar"))
     print(solution.isIsomorphic("paper", "title"))
     print(solution.isIsomorphic("bbbaaaba", "aaabbbba"))
+
+
+if __name__ == "__main__":
+    main()

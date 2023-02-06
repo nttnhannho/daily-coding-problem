@@ -67,8 +67,12 @@ class Solution:
         return res
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.romanToInt("III"))
     print(solution.romanToInt("LVIII"))
     print(solution.romanToInt("MCMXCIV"))
+
+
+if __name__ == "__main__":
+    main()

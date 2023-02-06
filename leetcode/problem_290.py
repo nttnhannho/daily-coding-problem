@@ -44,8 +44,12 @@ class Solution:
         return True
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.wordPattern("abba", "dog cat cat dog"))
     print(solution.wordPattern("abba", "dog cat cat fish"))
     print(solution.wordPattern("aaaa", "dog cat cat dog"))
+
+
+if __name__ == "__main__":
+    main()

@@ -37,8 +37,12 @@ class Solution:
         return [int(x) for x in str(increase_int)]
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.plusOne([1, 2, 3]))
     print(solution.plusOne([4, 3, 2, 1]))
     print(solution.plusOne([9]))
+
+
+if __name__ == "__main__":
+    main()

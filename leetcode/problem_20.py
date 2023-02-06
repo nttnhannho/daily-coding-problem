@@ -41,8 +41,12 @@ class Solution:
         return len(stack) == 0
 
 
-if __name__ == "__main__":
+def main():
     solution = Solution()
     print(solution.isValid("()"))
     print(solution.isValid("()[]{}"))
     print(solution.isValid("(]"))
+
+
+if __name__ == "__main__":
+    main()
